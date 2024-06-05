@@ -8,7 +8,7 @@
 /******REGOLE MAIN ********/
 main{
     background-color: brown;
-    height: 100vh;
+    padding: 50px;
 }
 
 /***********REGOLE SECTION******************/
@@ -22,7 +22,7 @@ section h2{
 }
 
 section{
-    padding-top: 30px;
+    padding: 30px;
 }
 
 .box{
@@ -33,20 +33,27 @@ section{
     background-color: white;
     border-radius: 30px;
     /* debug */
-    height: 400px;
+    /* height: 400px; */
 }
 
-input, select, button{
+input, select, .button{
+    padding: 1%;
     text-align: center;
     border: 2px solid brown;
     border-radius: 8px;
-    font-size: 30px;
+    font-size: 25px;
 
+}
+
+.button{
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 30px;
 }
 
 form{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
     line-height: 50px;
@@ -59,6 +66,29 @@ form{
     width: calc(100% / 3 - 20px );
 }
 
-#calc_prezzo{
-    /* display: none; */
+.calc_prezzo{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.biglietto{
+    padding: 10px;
+    border-radius: 0;
+}
+
+.biglietto h2{
+    text-align: left;
+    color: black;
+    padding: 0;
+}
+
+table{
+    width: 100%;font-size: 40px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    line-height: 50px;
+
 }
