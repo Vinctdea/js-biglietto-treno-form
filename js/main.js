@@ -6,8 +6,8 @@ const genera = document.getElementById("conf");
 const annulla = document.getElementById("ann");
 const attiva = document.querySelector(".calc_prezzo");
 let prezzoKm = 0.21;
-let nCarrozza = Math.floor(Math.random() * 10);
-let nBiglietto = Math.floor(Math.random() * 1000);
+let nCarrozza = Math.floor(Math.random() * 10 + 1);
+let nBiglietto = Math.floor(Math.random() * 10000);
 
 // evento click preleva dati
 // calcola il prezzo
@@ -24,7 +24,6 @@ genera.addEventListener("click",
         } else if (valoreEta === "over65" ){
             prezzoKm = (0.21- ((0.21*40)/100));
         }
-        
         console.log("nome: " + valoreNome,"età: " + valoreEta, "km: " + valoreKm);
         let risultato = (prezzoKm * valoreKm).toFixed(2);
         console.log("prezzo biglietto: " + risultato);
